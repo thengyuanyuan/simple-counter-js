@@ -17,12 +17,16 @@ function Counter(){
     }
 
     return(
-        <div>
-            <h1>Simple Counter</h1>
-            <p>{count}</p>
-            <button onClick={decrement}>Decrease</button>
-            <button onClick={reset}>Reset</button>
-            <button onClick={increasement}>Increase</button>
+        <div className='counter-container'>
+            <row>
+                <h1 className='counter-title'>Simple Counter</h1>
+                <p className='counter-display'>{count}</p>
+                <column>
+                    <button className='counter-button' onClick={decrement}>Decrease</button>
+                    <button className='counter-button' onClick={reset}>Reset</button>
+                    <button className='counter-button' onClick={increasement}>Increase</button>
+                </column>
+            </row>
         </div>
     )
 }
